@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            left: 10px;
+            background: yellow !important;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login sucessful</h1>
+    <div class="container">
+        <nav class="menu">
+            <li ><a onclick="logout2()">Logout</a></li>
+        </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script> 
+
+
+
+<script src="./script/auth.js"></script>
+<script src="./script/firestore-db.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyBYjFjsU08wDs39SkfOTPij6ffgqlgVURU",
+    authDomain: "signin-out-withusprofile.firebaseapp.com",
+    projectId: "signin-out-withusprofile",
+    storageBucket: "signin-out-withusprofile.appspot.com",
+    messagingSenderId: "472471805804",
+    appId: "1:472471805804:web:bca1517b5bd258d6d49d49"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
